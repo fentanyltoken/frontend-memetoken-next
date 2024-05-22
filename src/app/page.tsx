@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex min-h-screen flex-col items-center justify-between p-24 font-comic">
       <div className="flex flex-col items-center justify-center font-comic">
         <div className="flex flex-col items-center justify-center font-comic">
           <h1 className="text-8xl font-bold text-gray-900 mb-4 p-4">
@@ -24,7 +24,7 @@ export default function Home() {
             a unique digital asset. Join us in making the Fentanyl Token more
             famous than the drug, creating a positive impact and a strong
             community.<br></br>
-            Earn more Fentanyl by posting about us on Twitter.
+            Earn more Fentanyl by posting about us on Twitter/X.
           </p>
 
           <div className="flex flex-col items-center justify-center font-comic">
@@ -37,13 +37,14 @@ export default function Home() {
                 <li>85% of the supply is added to the Liquidity Pool</li>
                 <li>
                   5% of the supply is used to reward users for posting about us
-                  on X
+                  on Twitter/X
                 </li>
               </ul>
             </p>
             <h2 className="text-4xl font-bold text-gray-900 mb-4 p-4">
               Available on Base
             </h2>
+
             <Image
               src="/images/base-logo.png"
               alt="Base"
@@ -55,10 +56,33 @@ export default function Home() {
         </div>
         <UniswapWidget />
       </div>
-      <div className="flex flex-col items-center justify-center font-comic">
-        <p className="text-4xl font-bold text-gray-900 mb-4 p-4">
-          Earn more Fentanyl by posting about us on Twitter.
-        </p>
+      <div className="flex space-x-4 items-center justify-center">
+        <a
+          href="https://x.com/fentanyltoken"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/images/x.png"
+            alt="Twitter"
+            className="mb-12 mt-4"
+            width={50}
+            height={50}
+          />
+        </a>
+        <a
+          href="https://telegram.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/images/telegram.png"
+            alt="Telegram"
+            className="mb-12 mt-4"
+            width={50}
+            height={50}
+          />
+        </a>
       </div>
     </main>
   );

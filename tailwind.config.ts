@@ -14,10 +14,11 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        comic: ["Comic Sans MS", "Comic Sans", "cursive"], // Adding Comic Sans
+        comic: ["Comic Sans MS", "Comic Sans", "cursive"],
       },
     },
   },
+
   plugins: [],
 };
 export default config;
