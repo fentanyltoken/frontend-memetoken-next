@@ -35,6 +35,7 @@ export default function Home() {
               <ul>
                 <li>1 Trillion FENTANYL</li>
                 <li>85% of the supply is added to the Liquidity Pool</li>
+                <li>10% of the supply is used for the team.</li>
                 <li>
                   5% of the supply is used to reward users for posting about us
                   on Twitter/X

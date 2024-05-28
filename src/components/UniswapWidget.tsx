@@ -5,9 +5,10 @@ const JSON_RPC_URL =
   "https://base-mainnet.g.alchemy.com/v2/QWnDJnnZFRJSZABxedDHL1l1x2Y3c1aR";
 // The url of the default uniswap token list. This list will be passed to the Uniswap component
 // and will appear by default in the token selector UI.
-const TOKEN_LIST = "https://ipfs.io/ipns/tokens.uniswap.org";
+const TOKEN_LIST =
+  "https://raw.githubusercontent.com/fentanyltoken/tokenlist/main/tokenlist.json";
 
-const USDC = "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913";
+const DAI = "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb";
 
 const theme: Theme = {
   fontFamily: "Comic Sans MS",
@@ -36,7 +37,7 @@ export function UniswapWidget() {
         defaultInputAmount="1"
         // Address of the token to be selected by default in the input field (e.g. USDC)
         // for each network chain ID.
-        defaultOutputTokenAddress={USDC}
+        //defaultOutputTokenAddress={}
         theme={theme}
       />
     </main>
