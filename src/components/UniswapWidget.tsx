@@ -8,7 +8,7 @@ const JSON_RPC_URL =
 const TOKEN_LIST =
   "https://raw.githubusercontent.com/fentanyltoken/tokenlist/main/tokenlist.json";
 
-const DAI = "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb";
+const FENTANYL = "0xF46aDE1C2De8B6a85769cDcED6Bd9Ee0073bFd9A";
 
 const theme: Theme = {
   fontFamily: "Comic Sans MS",
@@ -37,7 +37,7 @@ export function UniswapWidget() {
         defaultInputAmount="1"
         // Address of the token to be selected by default in the input field (e.g. USDC)
         // for each network chain ID.
-        //defaultOutputTokenAddress={}
+        //defaultOutputTokenAddress={FENTANYL}
         theme={theme}
       />
     </main>

@@ -34,13 +34,23 @@ export default function Home() {
             <p className="text-lg md:text-4xl text-gray-700 mb-8 p-4 px-6 md:px-2 width-1/3 text-center">
               <ul>
                 <li>1 Trillion FENTANYL</li>
+                <br></br>
                 <li>85% of the supply is added to the Liquidity Pool</li>
+                <br></br>
                 <li>10% of the supply is used for the team.</li>
+                <br></br>
                 <li>
                   5% of the supply is used to reward users for posting about us
                   on Twitter/X
                 </li>
+                <li>FENTANYL is tradable on Uniswap - Base</li>
               </ul>
+            </p>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4 p-4">
+              Token Address
+            </h2>
+            <p className="text-lg md:text-4xl text-gray-700 mb-8 p-4 px-6 md:px-2 width-1/3 text-center">
+              0xF46aDE1C2De8B6a85769cDcED6Bd9Ee0073bFd9A
             </p>
             <h2 className="text-4xl font-bold text-gray-900 mb-4 p-4">
               Available on Base
@@ -54,8 +64,35 @@ export default function Home() {
               height={150}
             />
           </div>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4 p-4">
+            Trade it here:
+          </h2>
+          <Image
+            src="/images/uniswap-logo.png"
+            alt="Uniswap"
+            className="mb-12 mt-4"
+            width={300}
+            height={300}
+          />
+          <a
+            className="text-lg md:text-4xl text-gray-700 mb-8 p-4 px-6 md:px-2 width-1/3 text-center"
+            href="https://app.uniswap.org/swap"
+            style={{ color: "blue", textDecoration: "underline" }}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Click here to go to Uniswap
+          </a>
+          <p className="text-lg md:text-4xl text-gray-700 mb-8 p-4 px-6 md:px-2 width-1/3 text-center">
+            Press &quot;Select Token&quot; <br></br>
+            <br></br>
+            Paste in the
+            Tokenaddress(0xF46aDE1C2De8B6a85769cDcED6Bd9Ee0073bFd9A) <br></br>
+            <br></br>
+            Select &quot;Fentanyl&quot;
+          </p>
         </div>
-        <UniswapWidget />
+        {/*<UniswapWidget />*/}
       </div>
       <div className="flex space-x-4 items-center justify-center">
         <a
