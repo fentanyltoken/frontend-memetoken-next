@@ -93,6 +93,13 @@ export default function Home() {
           </p>
         </div>
         {/*<UniswapWidget />*/}
+        <iframe
+          id="dextools-widget"
+          title="DEXTools Trading Chart"
+          width="500"
+          height="400"
+          src="https://www.dextools.io/widget-chart/en/base/pe-light/0xe9472442c4048d35a37746ba550c60218f8e41e0?theme=light&chartType=2&chartResolution=30&drawingToolbars=false"
+        ></iframe>
       </div>
       <div className="flex space-x-4 items-center justify-center">
         <a
